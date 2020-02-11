@@ -36,7 +36,7 @@ namespace Lab_4_2
             };
 
             Console.WriteLine("Welcome to the Movie List Application!");
-            Console.WriteLine("There are 25 movies in this list.");
+            Console.WriteLine("There are 20 movies in this list.");
 
             
             string userCategory;
@@ -44,6 +44,9 @@ namespace Lab_4_2
             {
                 Console.Write("\nWhat category would you be interested in? (animated, drama, horror, or scifi) ");
                 userCategory = Console.ReadLine();
+
+
+                
 
                 if (userCategory.Equals("animated", StringComparison.OrdinalIgnoreCase) ||
                     userCategory.Equals("drama", StringComparison.OrdinalIgnoreCase) ||
@@ -63,6 +66,8 @@ namespace Lab_4_2
                 {
                     Console.WriteLine("\nCategory does not exist in the list");
                 }
+
+                
             } while (UserContinue());
 
             Console.WriteLine();
